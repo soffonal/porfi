@@ -1,0 +1,154 @@
+<html>
+<head>
+<title>My porfolio</title>
+<style>
+*{
+	padding:0;
+	margin:0;
+}
+
+
+:root{
+--bg:rgb(30,100,205);}
+button{
+	border:none;
+	background:none;
+}
+body{
+
+}
+.all{
+	display:flex;
+	width:100%;
+}
+.head{
+	display:flex;
+	align-items:center;
+	flex-flow:row wrap;
+	width:100%;
+	justify-content:space-between !important;
+	height:6%;
+	
+}
+.imd{margin:10px;
+	display:flex;
+	justify-content:center;
+}
+.im{
+	width:30px;
+	height:25px;
+	background-image:url("../image.png");
+	background-position:center center;
+	background-size:43px 40px;
+	border-radius:5px;
+	
+}
+.left{
+	height:auto;
+	display:inline-flex;
+	justify-content:flex-end;
+	flex-flow:row wrap;
+}
+.contentall{
+	margin:50px 0 0 0;
+	height:auto;
+	width:100%;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+	flex-direction:column;
+	align-items:center;
+}
+.animation{
+	min-width:80px;
+	width:10px;
+	height:3px;
+	background:#ddd;
+	border-radius:40px;
+	margin:1%;
+}
+.name{
+	animation-name:name;
+	animation-duration:1s;
+	animation-timing-function:linear;
+	animation-iteration-count:infinite;
+	font-size:16px;
+	text-align:center !important;
+	font-weight:bold;
+	font-family:arial;
+	margin:1% 1% 0;
+}
+.cont{
+	color:rgb(100,100,120);
+	min-width:350px;
+	box-sizing:border-box;
+	padding:10px;
+	font-family:arial;
+	font-size:14px;
+	font-weight:400px;
+	display:flex;
+	height:auto;
+	width:40%;
+}
+.image{
+	display:flex;
+	flex-wrap:nowrap;
+	margin:1%;
+	border:none;
+	border-radius:400px;
+	display:block;
+	width:150px;
+	height:150px;
+	background-image:url("../image.png");
+	background-position:center center;
+	background-size:270px 240px;
+	background-color:green;
+	
+}
+.a , .b, .c, .d{
+	font-size:14px;
+	margin:10px;
+}
+a{
+	text-decoration:none;
+	color:black;
+	font-family:arial;
+	font-weight:bold;
+}
+a:hover{
+	color:gray;
+}
+@keyframes name{
+	0%{background:none;}
+	50%{transform:scale(1.05 ,1.05)}
+	100%{color:black;}
+}
+
+</style>
+<link rel="stylesheet" href="responsive.css" >
+<meta http-equiv="refresh" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div id="all">
+	<div class="head">
+		<div class="imd">
+			<div class="im"></div>
+		</div>
+		<div class="left">
+			<div class="a"><button onclick="alert('thankyou')"><a href=#>About me</a></button></div>
+			<div class="b"><a href=#>My Skills</a></div>
+			<div class="c"><a href=#>Projects</a></div>
+			<div class="d"><a href=#>Contact</a></div>
+		</div>
+	</div>
+	<div class="contentall">
+		<div class="image"></div>
+		<div class="name">Sofonias melese</div>
+		<div class="animation"></div>
+		<div class="cont"><p>Hi my name is sofonias melese I am a full stack Web, ML and DL developer <br><br>As I was a kid I started coding, then was passion inside me said follow your dream so I started the day I wannted to be in It and today I am one of the people who made there dream to become true and made my big project at age 17</p>
+		</div>
+	</div>
+</div>
+</body>
+</html>
